@@ -1,0 +1,33 @@
+Code Walkthrough Comments
+==========================
+1.Planning to create a util class to convert number to roman letter or words as per the requirement.
+2.Planning to write a unit test case using Junit.So that i can test it with both positive and negCreatiative scenarios.
+3.It will also make sure your code is exactly matching the requirement.
+4.Creating a Java project and utility class called NumberPrintUtility.java under util package.
+5.It has two core methods.One is to convert number to ROMAN and other one is converting number to WORDS.
+6.It contains another method to call these core methods depends upon the outputformat.
+7.In this method we are checking the number is in the range between 1 to 3999 as per the requirement.
+8.If the inputnumber is not in that range ,then utility will not proceed further.it will exit at that place.
+
+Convering the number in to words
+================================
+
+method name : convertNumberToWords
+
+It takes the int as input parameter.so there is no need to check if input has any special character exists or not.
+Then we are checking the length to make sure how many digits in that number.This will tell me whether its thousands or hundereds or tens or single digit.
+if the number has length as 4,then i will consider that number is in thousands.so we can define the first number as thousands.
+After that 3rd digit will be considered as hundereds.Normally we use "and" in conjuction with hundreds when we read the number in words.
+for example,2657 - Two thousand Six hundred "and" fifty seven.This is the logic behind this method.
+
+
+
+Converting Number to ROMAN letters
+===================================
+
+method:convertNumberToRoman
+
+In this method we are taking the input number and checking the range .For example,if its 1234,then it will be greater than 1000.
+In that case we will convert it as M and substract 1000 from the input.so that 234 will consider as the input for next flow.
+Like wise it will keep on iterate untill it reaches the single digit.This is the logic behind this method
+
